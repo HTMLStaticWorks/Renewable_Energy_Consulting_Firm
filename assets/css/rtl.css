@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+
+/* --- RTL (Right-to-Left) DOCUMENT OVERRIDES --- */
+html[dir="rtl"] body {
+  font-family: 'Tajawal', var(--font-body);
+}
+
+html[dir="rtl"] h1, 
+html[dir="rtl"] h2, 
+html[dir="rtl"] h3, 
+html[dir="rtl"] h4, 
+html[dir="rtl"] h5, 
+html[dir="rtl"] h6,
+html[dir="rtl"] .navbar-brand-logo,
+html[dir="rtl"] .nav-link-custom,
+html[dir="rtl"] .btn-premium-primary,
+html[dir="rtl"] .btn-premium-secondary {
+  font-family: 'Tajawal', var(--font-heading);
+}
+
+/* Float card metrics on RTL */
+html[dir="rtl"] .glass-card-metrics {
+  left: auto;
+  right: -30px;
+}
+
+@media (max-width: 1099.98px) {
+  html[dir="rtl"] .glass-card-metrics {
+    right: 0;
+  }
+}
+
+/* Premium card hover line location shift */
+html[dir="rtl"] .premium-card::after {
+  left: auto;
+  right: 0;
+}
+
+/* Timeline direction shift */
+html[dir="rtl"] .timeline-line {
+  left: auto;
+  right: 0;
+  background: linear-gradient(270deg, var(--color-border) 0%, rgba(var(--color-primary-rgb), 0.2) 50%, var(--color-border) 100%);
+}
+
+html[dir="rtl"] .timeline-step {
+  text-align: right;
+}
+
+html[dir="rtl"] .timeline-step .timeline-badge {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+@media (max-width: 1099.98px) {
+  html[dir="rtl"] .timeline-step {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Home 2 visual widgets alignment */
+html[dir="rtl"] .widget-pos-1 {
+  right: auto;
+  left: 6%;
+}
+
+html[dir="rtl"] .widget-pos-2 {
+  left: auto;
+  right: 6%;
+}
+
+/* Offset margins for icons / buttons */
+html[dir="rtl"] .btn-premium-primary svg,
+html[dir="rtl"] .btn-premium-secondary svg,
+html[dir="rtl"] .social-auth-btn svg {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* Offcanvas custom direction details */
+html[dir="rtl"] .offcanvas-custom {
+  border-left: none;
+  border-right: 1px solid var(--color-border);
+}
+
+/* SVG logo flip if asymmetrical (our SVG is symmetrical, but text alignment might change) */
+html[dir="rtl"] .navbar-brand-logo svg {
+  transform: scaleX(-1);
+}
+
+/* --- CASE STUDIES RTL OVERRIDES --- */
+html[dir="rtl"] .chart-container {
+  border-left: none !important;
+  border-right: 2px solid var(--color-border) !important;
+  padding-left: 0 !important;
+  padding-right: 10px !important;
+}
+
+html[dir="rtl"] .success-quote-box {
+  border-left: none !important;
+  border-right: 3px solid var(--color-primary) !important;
+}
+
+html[dir="rtl"] html[data-theme="dark"] .success-quote-box {
+  border-right-color: var(--color-accent) !important;
+}
+
+/* --- PRICING RTL OVERRIDES --- */
+html[dir="rtl"] .comparison-table th:first-child,
+html[dir="rtl"] .comparison-table td:first-child {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .pricing-card ul.list-unstyled li.d-flex {
+  justify-content: flex-start !important;
+  text-align: right !important;
+}
+
+html[dir="rtl"] .accordion-button::after {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}

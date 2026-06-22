@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aethera | Consulting Packages & Strategic Utility Pricing</title>
+  <meta name="description" content="Choose from Aethera's transparent consulting tiers: Starter Audits, Business Transitions, and Large-Scale Enterprise Solutions with monthly or annual schedules.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aethera | Consulting Packages & Pricing">
+  <meta property="og:description" content="Compare consulting packages tailored to your scale. Start with a structured audit.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aetheraconsulting.com/pricing.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Custom Style Sheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- --- HEADER NAVIGATION --- -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-logo" href="index.html">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L22 12L12 22L2 12L12 2Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M12 6V18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M8 12H16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span>AETHERA</span>
+      </a>
+
+      <!-- Desktop Nav Center -->
+      <div class="collapse navbar-collapse justify-content-center navbar-nav-desktop">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:4px; margin-bottom:2px;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item py-2 px-3" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-item py-2 px-3" href="home-2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="case-studies.html">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom active" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Actions -->
+      <div class="d-flex align-items-center gap-3">
+        <div class="utility-controls">
+          <button class="utility-btn rtl-toggle-btn" aria-label="Toggle Document Direction" title="Toggle RTL/LTR">
+            <span class="rtl-toggle-text">RTL</span>
+          </button>
+          <button class="utility-btn theme-toggle-btn" aria-label="Toggle Light/Dark Theme" title="Toggle Dark Mode">
+            <span class="theme-icon"></span>
+          </button>
+        </div>
+
+        <a href="login.html" class="btn-premium-secondary d-none d-lg-inline-flex px-4 py-2" style="font-size: 0.9rem;">
+          Login
+        </a>
+
+        <!-- Hamburger Mobile button -->
+        <button class="btn-hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavbar" aria-controls="mobileNavbar" aria-label="Toggle navigation">
+          <span class="hamburger-line hamburger-line-1"></span>
+          <span class="hamburger-line hamburger-line-2"></span>
+          <span class="hamburger-line hamburger-line-3"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- --- MOBILE OFFCANVAS NAVIGATION --- -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileNavbar" aria-labelledby="mobileNavbarLabel">
+    <div class="offcanvas-header justify-content-between p-4">
+      <h5 class="offcanvas-title footer-logo-title d-flex align-items-center gap-2" id="mobileNavbarLabel">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L22 12L12 22L2 12L12 2Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M12 6V18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M8 12H16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span>AETHERA</span>
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-4">
+      <ul class="navbar-nav gap-2">
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-link-custom dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Home <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:4px; margin-bottom:2px;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <ul class="dropdown-menu border-0 shadow-none ps-3 mb-2 bg-transparent">
+            <li><a class="dropdown-item py-2" href="index.html">Home 1</a></li>
+            <li><a class="dropdown-item py-2" href="home-2.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link nav-link-custom py-2" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom py-2" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom py-2" href="case-studies.html">Case Studies</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom py-2" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom py-2" href="contact.html">Contact</a></li>
+        <li class="nav-item mt-4">
+          <a href="login.html" class="btn-premium-primary w-100">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- --- PRICING HERO --- -->
+  <section class="hero-section pb-4 bg-light" style="padding-top: calc(var(--space-section) + 1.5rem);">
+    <div class="container">
+      <div class="text-center reveal-fade-up">
+        <span class="section-tagline">Transparent Rates</span>
+        <h1 class="text-display-2 mb-2" style="font-weight: 800;">Consulting Packages</h1>
+        <p class="text-muted mb-0">Select an engagement schedule tailored to your organizational scale and energy footprint.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- PRICING TABLES --- -->
+  <section class="section-pricing-plans py-5">
+    <div class="container">
+      
+      <!-- Billing Switch -->
+      <div class="pricing-switch-container reveal-fade-up">
+        <span class="small fw-bold text-secondary">Monthly Billing</span>
+        <label class="pricing-switch">
+          <input type="checkbox" id="billingToggle">
+          <span class="pricing-slider"></span>
+        </label>
+        <span class="small fw-bold text-secondary">Annual Billing <span class="badge bg-success-subtle text-success ms-1 small">Save 20%</span></span>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Starter Audit -->
+        <div class="col-lg-4 reveal-fade-up stagger-1">
+          <div class="premium-card pricing-card d-flex flex-column justify-content-between">
+            <div>
+              <span class="text-muted text-uppercase tracking-wider small fw-bold">Assessment</span>
+              <h3 class="fw-bold my-2 fs-4">Starter Audit</h3>
+              <p class="small text-muted mb-4">Basic energy assessment for single-site facilities and offices.</p>
+              <div class="my-4">
+                <span class="fs-1 fw-extrabold text-secondary">$<span class="price-val" data-monthly="1999" data-annual="1599">1999</span></span>
+                <span class="price-schedule text-muted">/ mo</span>
+              </div>
+              <ul class="list-unstyled d-flex flex-column gap-2 small border-top pt-4 text-muted">
+                <li class="d-flex gap-2 align-items-center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg> Complete bills & carbon footprint audit</li>
+                <li class="d-flex gap-2 align-items-center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg> Rooftop solar size simulations</li>
+                <li class="d-flex gap-2 align-items-center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg> Basic utility contract offsets report</li>
+                <li class="d-flex gap-2 align-items-center text-decoration-line-through opacity-50"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Construction RFP management</li>
+              </ul>
+            </div>
+            <a href="contact.html" class="btn-premium-secondary w-100 mt-5">Initiate Starter Audit</a>
+          </div>
+        </div>
+
+        <!-- Business Transition (Highlighted) -->
+        <div class="col-lg-4 reveal-fade-up stagger-2">
+          <div class="premium-card pricing-card popular d-flex flex-column justify-content-between">
+            <span class="popular-badge">Most Popular</span>
+            <div>
+              <span class="text-muted text-uppercase tracking-wider small fw-bold">Transformation</span>
+              <h3 class="fw-bold my-2 fs-4 text-primary">Business Transition</h3>
+              <p class="small text-muted mb-4">Complete renewable strategy and sourcing audit for mid-scale operations.</p>
+              <div class="my-4">
+                <span class="fs-1 fw-extrabold text-secondary">$<span class="price-val" data-monthly="4999" data-annual="3999">4999</span></span>
+                <span class="price-schedule text-muted">/ mo</span>
+              </div>
+              <ul class="list-unstyled d-flex flex-column gap-2 small border-top pt-4 text-muted">
+                <li class="d-flex gap-2 align-items-center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg> LiDAR roof modeling & structural checks</li>
+                <li class="d-flex gap-2 align-items-center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg> Solar, Wind, and Battery simulation codes</li>
+                <li class="d-flex gap-2 align-items-center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg> Developer RFP contractor bidding controls</li>
+                <li class="d-flex gap-2 align-items-center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg> Grid interconnection PPA advisory</li>
+              </ul>
+            </div>
+            <a href="contact.html" class="btn-premium-primary w-100 mt-5">Launch Transition Plan</a>
+          </div>
+        </div>
+
+        <!-- Enterprise Solution -->
+        <div class="col-lg-4 reveal-fade-up stagger-3">
+          <div class="premium-card pricing-card d-flex flex-column justify-content-between">
+            <div>
+              <span class="text-muted text-uppercase tracking-wider small fw-bold">Scale Grid</span>
+              <h3 class="fw-bold my-2 fs-4">Enterprise Solution</h3>
+              <p class="small text-muted mb-4">Large-scale consulting arrays, public policy and municipal grids.</p>
+              <div class="my-4">
+                <span class="fs-1 fw-extrabold text-secondary">$<span class="price-val" data-monthly="11999" data-annual="9599">11999</span></span>
+                <span class="price-schedule text-muted">/ mo</span>
+              </div>
+              <ul class="list-unstyled d-flex flex-column gap-2 small border-top pt-4 text-muted">
+                <li class="d-flex gap-2 align-items-center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg> Multi-site micro-grid physics modeling</li>
+                <li class="d-flex gap-2 align-items-center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg> ESG compliance reviews & carbon trading registry</li>
+                <li class="d-flex gap-2 align-items-center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg> Full engineering construction oversight</li>
+                <li class="d-flex gap-2 align-items-center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-primary"><polyline points="20 6 9 17 4 12"></polyline></svg> Dedicated support consultant</li>
+              </ul>
+            </div>
+            <a href="contact.html" class="btn-premium-secondary w-100 mt-5">Request Custom RFP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- VALUE ESTIMATOR (ROI CALCULATOR) --- -->
+  <section class="section-pricing-calculator py-5">
+    <div class="container">
+      <div class="text-center mb-5 reveal-fade-up">
+        <span class="section-tagline">Value Calculator</span>
+        <h2 class="text-display-2 mx-auto" style="font-weight: 800;">Estimate Your Transition Value</h2>
+        <p class="lead text-muted max-width-600 mx-auto">Adjust the slider to your current monthly energy spend to estimate the solar capacity needed, annual CO2 offset, and utility savings.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center reveal-fade-up stagger-1">
+        <div class="col-lg-10">
+          <div class="calculator-card">
+            <div class="row g-5 align-items-center">
+              <!-- Slider Input -->
+              <div class="col-md-6">
+                <h4 class="fw-bold fs-5 mb-2 text-secondary">Monthly Energy Bill</h4>
+                <p class="small text-muted mb-4">Input your organization's average electricity and utility expenditure.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="small fw-bold text-muted">$1,000</span>
+                  <span class="fs-4 fw-extrabold text-primary" id="billValueDisplay">$10,000</span>
+                  <span class="small fw-bold text-muted">$50,000</span>
+                </div>
+                <input type="range" class="calculator-slider" id="billSlider" min="1000" max="50000" step="500" value="10000">
+                <div class="text-center mt-2">
+                  <a href="contact.html" class="btn-premium-primary py-2 px-4 fs-7">Get Detailed Custom Audit</a>
+                </div>
+              </div>
+              
+              <!-- Calculated Outcomes -->
+              <div class="col-md-6">
+                <div class="row g-3">
+                  <!-- Result 1: Solar Capacity -->
+                  <div class="col-sm-6">
+                    <div class="calculator-result-box">
+                      <span class="small text-muted text-uppercase tracking-wider fw-bold" style="font-size: 0.65rem;">Capacity Needed</span>
+                      <h4 class="fs-3 fw-bold text-secondary my-2" id="calcCapacity">1,500 kW</h4>
+                      <p class="small text-muted mb-0">Estimated Solar Grid Scale</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Result 2: CO2 Offset -->
+                  <div class="col-sm-6">
+                    <div class="calculator-result-box">
+                      <span class="small text-muted text-uppercase tracking-wider fw-bold" style="font-size: 0.65rem;">Annual CO2 Offset</span>
+                      <h4 class="fs-3 fw-bold text-secondary my-2" id="calcCO2">450 Tons</h4>
+                      <p class="small text-muted mb-0">Estimated Green Equivalents</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Result 3: Annual Savings -->
+                  <div class="col-md-12">
+                    <div class="calculator-result-box" style="border-color: var(--color-accent); background-color: rgba(16, 185, 129, 0.03);">
+                      <span class="small text-muted text-uppercase tracking-wider fw-bold" style="font-size: 0.65rem;">Estimated Annual Savings</span>
+                      <h4 class="fs-2 fw-extrabold text-success my-2" id="calcSavings">$50,400</h4>
+                      <p class="small text-muted mb-0">Expected Utility Expenditure Offset</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- PRICING COMPARISON MATRIX --- -->
+  <section class="section-pricing-matrix py-5">
+    <div class="container">
+      <div class="text-center mb-5 reveal-fade-up">
+        <span class="section-tagline">Tiers Comparison</span>
+        <h2 class="text-display-2 mx-auto" style="font-weight: 800;">Compare Plan Capabilities</h2>
+        <p class="lead text-muted max-width-600 mx-auto">Compare detailed deliverables and inclusions across Aethera's strategic consulting plans.</p>
+      </div>
+
+      <div class="row reveal-fade-up stagger-1">
+        <div class="col-12">
+          <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Capabilities & Inclusion</th>
+                  <th>Starter Audit</th>
+                  <th>Business Transition</th>
+                  <th>Enterprise Solution</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bills & Carbon Footprint Audit</td>
+                  <td><span class="comparison-check">✓</span></td>
+                  <td><span class="comparison-check">✓</span></td>
+                  <td><span class="comparison-check">✓</span></td>
+                </tr>
+                <tr>
+                  <td>LiDAR Roof & Structural Simulation</td>
+                  <td><span class="comparison-dash">—</span></td>
+                  <td><span class="comparison-check">✓</span></td>
+                  <td><span class="comparison-check">✓</span></td>
+                </tr>
+                <tr>
+                  <td>Solar, Wind, Battery Sizing CFD Code</td>
+                  <td><span class="comparison-dash">—</span></td>
+                  <td><span class="comparison-check">✓</span></td>
+                  <td><span class="comparison-check">✓</span></td>
+                </tr>
+                <tr>
+                  <td>Contractor RFP & Developer Management</td>
+                  <td><span class="comparison-dash">—</span></td>
+                  <td><span class="comparison-check">✓</span></td>
+                  <td><span class="comparison-check">✓</span></td>
+                </tr>
+                <tr>
+                  <td>ESG Regulatory Policy Reviews</td>
+                  <td><span class="comparison-dash">—</span></td>
+                  <td><span class="comparison-dash">—</span></td>
+                  <td><span class="comparison-check">✓</span></td>
+                </tr>
+                <tr>
+                  <td>Dedicated Energy Consultant Support</td>
+                  <td><span class="comparison-dash">—</span></td>
+                  <td><span class="comparison-dash">—</span></td>
+                  <td><span class="comparison-check">✓</span></td>
+                </tr>
+                <tr>
+                  <td>PPA & Grid Interconnection Advisory</td>
+                  <td>Basic Report</td>
+                  <td>Full Advisory</td>
+                  <td>Complete Integration</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- PRICING FAQS --- -->
+  <section class="section-pricing-faqs py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5 reveal-fade-up">
+        <span class="section-tagline">Common Inquiries</span>
+        <h2 class="text-display-2 mx-auto" style="font-weight: 800;">Pricing FAQs</h2>
+        <p class="lead text-muted max-width-600 mx-auto">Have questions about our pricing packages? Review our detailed answers below.</p>
+      </div>
+
+      <div class="row justify-content-center reveal-fade-up stagger-1">
+        <div class="col-lg-8">
+          <div class="accordion pricing-faq-accordion" id="pricingFaq">
+            <!-- Question 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeader1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                  How long does a Starter Audit take to complete?
+                </button>
+              </h2>
+              <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeader1" data-bs-parent="#pricingFaq">
+                <div class="accordion-body">
+                  A Starter Audit typically takes 2 to 3 weeks. It requires sharing your utility bills for the past 12-24 months and brief layout images of your facility. Aethera returns a complete bills audit, carbon footprint sizing, and basic rooftop solar feasibility simulation.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeader2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                  Can we switch from monthly to annual billing?
+                </button>
+              </h2>
+              <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeader2" data-bs-parent="#pricingFaq">
+                <div class="accordion-body">
+                  Yes, you can upgrade from monthly to annual billing at any point during your consulting cycle to lock in the 20% discount. Adjustments will be prorated on your next billing period.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeader3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                  What is a PPA Advisory, and is it included?
+                </button>
+              </h2>
+              <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeader3" data-bs-parent="#pricingFaq">
+                <div class="accordion-body">
+                  A Power Purchase Agreement (PPA) Advisory involves evaluating contract rates and terms between energy generators and grid buyers. We provide PPA reviews under both the Business and Enterprise tiers to negotiate utility pricing and offset risk factors.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeader4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                  Do you offer custom plans for municipal grids?
+                </button>
+              </h2>
+              <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeader4" data-bs-parent="#pricingFaq">
+                <div class="accordion-body">
+                  Yes, we offer fully customized solutions tailored to government councils and microgrids. Please request a custom RFP on our Contact page or initiate an Enterprise consultation so our leads can detail municipal solutions.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- DYNAMIC CALCULATOR SCRIPT --- -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slider = document.getElementById('billSlider');
+      const billDisplay = document.getElementById('billValueDisplay');
+      const capacityDisplay = document.getElementById('calcCapacity');
+      const co2Display = document.getElementById('calcCO2');
+      const savingsDisplay = document.getElementById('calcSavings');
+
+      if (!slider || !billDisplay || !capacityDisplay || !co2Display || !savingsDisplay) return;
+
+      const updateCalculations = () => {
+        const val = parseFloat(slider.value);
+        
+        // Formatted display
+        billDisplay.textContent = `$${val.toLocaleString()}`;
+        
+        // Solar Capacity (kW) = Bill * 0.15
+        const capacity = val * 0.15;
+        capacityDisplay.textContent = `${Math.round(capacity).toLocaleString()} kW`;
+        
+        // Annual CO2 Offset (Tons) = Bill * 0.045
+        const co2 = val * 0.045;
+        co2Display.textContent = `${Math.round(co2).toLocaleString()} Tons`;
+        
+        // Annual Utility Savings ($) = Bill * 12 * 0.42 (42% average savings)
+        const savings = val * 12 * 0.42;
+        savingsDisplay.textContent = `$${Math.round(savings).toLocaleString()}`;
+      };
+
+      slider.addEventListener('input', updateCalculations);
+      updateCalculations(); // Run initial render calculations
+    });
+  </script>
+
+  <!-- --- FOOTER --- -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="footer-logo-title d-flex align-items-center gap-2 mb-3" href="index.html">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L22 12L12 22L2 12L12 2Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M12 6V18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M8 12H16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <span>AETHERA</span>
+          </a>
+          <p class="small opacity-75">Premium energy advisory helping organizations execute high-yield, sustainable transitions to solar, wind, and hydro grids.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#" aria-label="LinkedIn"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-2 offset-lg-2">
+          <h6 class="footer-section-title">Navigation</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-2">
+          <h6 class="footer-section-title">Inquiry Hub</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="pricing.html">Pricing Strategy</a></li>
+            <li><a href="contact.html">Energy Audit Request</a></li>
+            <li><a href="coming-soon.html">Launch Hub</a></li>
+            <li><a href="404.html">System Error Page</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12 col-lg-2">
+          <h6 class="footer-section-title">Security & Auth</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="login.html">Client Portal Login</a></li>
+            <li><a href="register.html">Register Account</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>&copy; 2026 Aethera Energy Consulting. All rights reserved.</div>
+        <div class="d-flex gap-3">
+          <a href="#" class="small">Sitemap</a>
+          <a href="#" class="small">Security Audits</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <!-- Custom Logic -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* --- DARK THEME OVERRIDES --- */
+html[data-theme="dark"] {
+  /* Colors - Dark Theme */
+  --color-primary: #10b981;           /* Lighter, glowing emerald green for contrast */
+  --color-primary-rgb: 16, 185, 129;
+  --color-primary-light: #122c20;
+  --color-accent: #34d399;            /* Brighter mint accent */
+  --color-accent-rgb: 52, 211, 153;
+  --color-secondary: #ffffff;         /* Pure white text for headings */
+  --color-secondary-rgb: 255, 255, 255;
+  --color-bg-main: #070908;           /* Deep luxury dark olive-black */
+  --color-bg-surface: #101411;        /* Rich dark surface */
+  --color-bg-surface-rgb: 16, 20, 17;
+  --color-text: #d1dbd4;              /* Soft green-tinted light grey */
+  --color-text-muted: #9ab0a2;        /* Lighter muted grey-green for better visibility */
+  --color-border: #1b261f;            /* Darker green-tinted borders */
+  --color-card-shadow: rgba(0, 0, 0, 0.3);
+  --color-shadow-hover: rgba(16, 185, 129, 0.04);
+}
+
+/* Extra overrides for specific elements in Dark Mode */
+html[data-theme="dark"] .bg-light,
+html[data-theme="dark"] .bg-white {
+  background-color: var(--color-bg-surface) !important;
+}
+
+html[data-theme="dark"] .navbar-brand-logo svg {
+  fill: var(--color-primary);
+}
+
+html[data-theme="dark"] .navbar-custom {
+  background-color: rgba(var(--color-bg-surface-rgb), 0.85);
+  border-bottom: 1px solid var(--color-border);
+}
+
+html[data-theme="dark"] .glass-card-metrics {
+  background: rgba(var(--color-bg-surface-rgb), 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+html[data-theme="dark"] .timeline-badge {
+  background-color: var(--color-bg-surface);
+}
+
+html[data-theme="dark"] .filter-btn:not(.active):not(:hover) {
+  border-color: var(--color-border);
+  color: var(--color-text-muted);
+}
+
+html[data-theme="dark"] .footer-custom {
+  background-color: #0b0e0c;
+  border-top: 1px solid var(--color-border);
+}
+
+html[data-theme="dark"] .why-choose-us-section {
+  background-color: var(--color-primary-light);
+}
+
+html[data-theme="dark"] .cta-container-box {
+  background-color: #101411;
+  border: 1px solid var(--color-border);
+}
+
+/* Map Tooltip fix for Dark Mode */
+html[data-theme="dark"] .marker-tooltip {
+  background-color: var(--color-bg-surface);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-border);
+}
+
+/* Form element fixes in Dark Mode */
+html[data-theme="dark"] .form-control,
+html[data-theme="dark"] .form-select {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+html[data-theme="dark"] .form-control::placeholder {
+  color: var(--color-text-muted);
+}
+
+html[data-theme="dark"] .form-control:focus,
+html[data-theme="dark"] .form-select:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: var(--color-primary);
+}
+
+html[data-theme="dark"] .form-floating > label {
+  color: var(--color-text-muted);
+}
+
+html[data-theme="dark"] .form-floating > .form-control:focus ~ label,
+html[data-theme="dark"] .form-floating > .form-control:not(:placeholder-shown) ~ label,
+html[data-theme="dark"] .form-floating > .form-select ~ label {
+  color: var(--color-primary);
+}
+
+/* Auth social buttons in Dark Mode */
+html[data-theme="dark"] .social-auth-btn {
+  background-color: var(--color-bg-surface);
+  border-color: var(--color-border);
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .social-auth-btn:hover {
+  background-color: var(--color-bg-main);
+}
+
+/* Redesigned Dashboard overrides for Dark Mode */
+html[data-theme="dark"] .floating-stat-widget {
+  background: rgba(16, 20, 17, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+html[data-theme="dark"] .floating-stat-widget:hover {
+  border-color: rgba(var(--color-primary-rgb), 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="dark"] .services-hero {
+  background-image: linear-gradient(rgba(7, 9, 8, 0.88), rgba(7, 9, 8, 0.88)), url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1920&q=80');
+}
+

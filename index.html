@@ -1,1 +1,466 @@
-hello
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aethera | Renewable Energy Consulting & Strategic Sustainability</title>
+  <meta name="description" content="Empowering global businesses and governments to accelerate their energy transition with premier wind, solar, and hydro power consulting, audits, and strategic optimization.">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Aethera | Renewable Energy Consulting & Strategic Sustainability">
+  <meta property="og:description" content="Accelerating the future with clean energy solutions. Strategic consulting helping organizations transition to sustainable wind, solar, and hydro solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aetheraconsulting.com/index.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Custom Style Sheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+  <!-- Schema.org JSON-LD Metadata -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Aethera Renewable Energy Consulting",
+    "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80",
+    "description": "Premium consulting firm specializing in clean energy strategies, solar feasibility, wind optimization, and hydropower advisory.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 Sustainable Way",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA",
+      "postalCode": "94107",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-800-555-0199"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- --- HEADER NAVIGATION --- -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand navbar-brand-logo" href="index.html">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L22 12L12 22L2 12L12 2Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M12 6V18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M8 12H16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span>AETHERA</span>
+      </a>
+
+      <!-- Desktop Nav Center (Hidden on tablet/mobile) -->
+      <div class="collapse navbar-collapse justify-content-center navbar-nav-desktop">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-custom dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:4px; margin-bottom:2px;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item py-2 px-3 active" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-item py-2 px-3" href="home-2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="case-studies.html">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Navigation Actions -->
+      <div class="d-flex align-items-center gap-3">
+        <div class="utility-controls">
+          <!-- RTL/LTR Toggle -->
+          <button class="utility-btn rtl-toggle-btn" aria-label="Toggle Document Direction" title="Toggle RTL/LTR">
+            <span class="rtl-toggle-text">RTL</span>
+          </button>
+          <!-- Theme Toggle -->
+          <button class="utility-btn theme-toggle-btn" aria-label="Toggle Light/Dark Theme" title="Toggle Dark Mode">
+            <span class="theme-icon"></span>
+          </button>
+        </div>
+
+        <a href="login.html" class="btn-premium-secondary d-none d-lg-inline-flex px-4 py-2" style="font-size: 0.9rem;">
+          Login
+        </a>
+
+        <!-- Hamburger Mobile button -->
+        <button class="btn-hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavbar" aria-controls="mobileNavbar" aria-label="Toggle navigation">
+          <span class="hamburger-line hamburger-line-1"></span>
+          <span class="hamburger-line hamburger-line-2"></span>
+          <span class="hamburger-line hamburger-line-3"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- --- MOBILE OFFCANVAS NAVIGATION --- -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileNavbar" aria-labelledby="mobileNavbarLabel">
+    <div class="offcanvas-header justify-content-between p-4">
+      <h5 class="offcanvas-title footer-logo-title d-flex align-items-center gap-2" id="mobileNavbarLabel">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L22 12L12 22L2 12L12 2Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M12 6V18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M8 12H16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span>AETHERA</span>
+      </h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-4">
+      <ul class="navbar-nav gap-2">
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-link-custom dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Home <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:4px; margin-bottom:2px;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <ul class="dropdown-menu border-0 shadow-none ps-3 mb-2 bg-transparent">
+            <li><a class="dropdown-item py-2 active" href="index.html">Home 1</a></li>
+            <li><a class="dropdown-item py-2" href="home-2.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link nav-link-custom py-2" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom py-2" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom py-2" href="case-studies.html">Case Studies</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom py-2" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom py-2" href="contact.html">Contact</a></li>
+        <li class="nav-item mt-4">
+          <a href="login.html" class="btn-premium-primary w-100">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- --- HERO SECTION --- -->
+  <section class="hero-section">
+    <div class="hero-overlay-graphic"></div>
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-fade-up">
+          <span class="section-tagline">Strategic Energy Transition</span>
+          <h1 class="text-display-1 mb-4">Accelerating The Future With Clean Energy Solutions</h1>
+          <p class="lead mb-5">Strategic renewable energy consulting helping organizations transition to sustainable solar, wind, and hydro power solutions.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="contact.html" class="btn-premium-primary">
+              <span>Start Energy Audit</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="case-studies.html" class="btn-premium-secondary">Explore Case Studies</a>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal-fade-up stagger-2">
+          <div class="hero-visual-wrapper">
+            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80" alt="Sustainable clean energy wind turbines background" class="hero-img-main">
+            <!-- Glassmorphism Stats Overlay -->
+            <div class="glass-card-metrics">
+              <div class="card-icon-wrapper mb-0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <div>
+                <div class="h5 mb-0 fw-bold">-40%</div>
+                <div class="small text-muted">Avg. client energy expenditure reduction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- SECTION 1: RENEWABLE ENERGY EXPERTISE --- -->
+  <section class="section-expertise py-5">
+    <div class="container">
+      <div class="row mb-5 reveal-fade-up">
+        <div class="col-lg-6">
+          <span class="section-tagline">Our Specialization</span>
+          <h2 class="text-display-2">Renewable Energy Expertise</h2>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center">
+          <p class="text-muted mb-0">We specialize in identifying, sizing, and executing structural shifts to emission-free, high-return power strategies across three key resource networks.</p>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Solar Consulting -->
+        <div class="col-md-4 reveal-fade-up stagger-1">
+          <div class="premium-card">
+            <div class="card-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </div>
+            <h4>Solar Consulting</h4>
+            <p class="text-muted">Solar feasibility studies, ROI analytics, photovoltaic grid planning, and structural commercial transition programs.</p>
+            <a href="service-details.html" class="d-inline-flex align-items-center gap-2 mt-3 small fw-bold">
+              <span>Learn More</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Wind Energy Strategy -->
+        <div class="col-md-4 reveal-fade-up stagger-2">
+          <div class="premium-card">
+            <div class="card-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+            </div>
+            <h4>Wind Energy Strategy</h4>
+            <p class="text-muted">Turbine optimization modeling, structural environmental assessments, power purchase agreement matching, and farm deployment layouts.</p>
+            <a href="service-details.html" class="d-inline-flex align-items-center gap-2 mt-3 small fw-bold">
+              <span>Learn More</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hydro Power Solutions -->
+        <div class="col-md-4 reveal-fade-up stagger-3">
+          <div class="premium-card">
+            <div class="card-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+            </div>
+            <h4>Hydro Power Solutions</h4>
+            <p class="text-muted">Micro-hydro planning, resource accessibility analysis, ecosystem flow assessment, and clean power grid storage infrastructure.</p>
+            <a href="service-details.html" class="d-inline-flex align-items-center gap-2 mt-3 small fw-bold">
+              <span>Learn More</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- SECTION 2: ENERGY TRANSITION PROCESS --- -->
+  <section class="section-process bg-light py-5">
+    <div class="container">
+      <div class="text-center mb-5 reveal-fade-up">
+        <span class="section-tagline">Our Methodology</span>
+        <h2 class="text-display-2 mx-auto">Energy Transition Process</h2>
+        <p class="text-muted max-width-600 mx-auto mt-3">We guide your organization along a structured pathway to transition from fossil grids to independent carbon-neutral arrays.</p>
+      </div>
+
+      <div class="timeline-wrapper reveal-fade-up stagger-2">
+        <div class="timeline-line"></div>
+        <div class="row g-4 position-relative">
+          <!-- Step 1 -->
+          <div class="col-lg-3 col-md-6 timeline-step">
+            <div class="timeline-badge">1</div>
+            <h5 class="timeline-title">Assessment</h5>
+            <p class="timeline-text text-muted">Complete audit of current carbon metrics, utility bills, structural roofs/lands, and efficiency gaps.</p>
+          </div>
+          <!-- Step 2 -->
+          <div class="col-lg-3 col-md-6 timeline-step">
+            <div class="timeline-badge">2</div>
+            <h5 class="timeline-title">Strategy</h5>
+            <p class="timeline-text text-muted">Custom architectural engineering blueprints, solar/wind sizing simulations, and investment ROI models.</p>
+          </div>
+          <!-- Step 3 -->
+          <div class="col-lg-3 col-md-6 timeline-step">
+            <div class="timeline-badge">3</div>
+            <h5 class="timeline-title">Implementation</h5>
+            <p class="timeline-text text-muted">Hardware sourcing management, construction oversight, micro-grid wiring, and grid-connection validation.</p>
+          </div>
+          <!-- Step 4 -->
+          <div class="col-lg-3 col-md-6 timeline-step">
+            <div class="timeline-badge">4</div>
+            <h5 class="timeline-title">Optimization</h5>
+            <p class="timeline-text text-muted">AI-driven energy routing, battery storage balancing, performance alerts, and dynamic carbon credit trading.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- SECTION 3: FEATURED CASE STUDIES --- -->
+  <section class="section-portfolio py-5">
+    <div class="container">
+      <div class="row mb-4 reveal-fade-up">
+        <div class="col-lg-6">
+          <span class="section-tagline">Impact Records</span>
+          <h2 class="text-display-2">Featured Case Studies</h2>
+        </div>
+        <div class="col-lg-6 d-flex align-items-end justify-content-lg-end mt-3 mt-lg-0">
+          <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="solar">Solar</button>
+            <button class="filter-btn" data-filter="wind">Wind</button>
+            <button class="filter-btn" data-filter="hydro">Hydro</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-4 case-study-card-wrapper reveal-fade-up stagger-1" data-category="solar">
+          <div class="case-study-card" onclick="location.href='case-studies.html'">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80" alt="Solar transition on manufacturing roofs" class="case-study-img">
+            <div class="case-study-overlay">
+              <span class="case-study-type">Solar Transition</span>
+              <h4 class="case-study-title">Commercial Solar Transition</h4>
+              <div class="case-study-results">40% reduction in annual grid energy expenditure.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4 case-study-card-wrapper reveal-fade-up stagger-2" data-category="wind">
+          <div class="case-study-card" onclick="location.href='case-studies.html'">
+            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80" alt="Industrial onshore wind farm array layout" class="case-study-img">
+            <div class="case-study-overlay">
+              <span class="case-study-type">Wind Strategy</span>
+              <h4 class="case-study-title">Industrial Energy Optimization</h4>
+              <div class="case-study-results">Offset 14,000 tonnes of CO2 emissions annually.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4 case-study-card-wrapper reveal-fade-up stagger-3" data-category="hydro">
+          <div class="case-study-card" onclick="location.href='case-studies.html'">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Mountain stream micro hydro power generator facility" class="case-study-img">
+            <div class="case-study-overlay">
+              <span class="case-study-type">Hydro / Policy</span>
+              <h4 class="case-study-title">Government Renewable Planning</h4>
+              <div class="case-study-results">Designed micro-hydro grid mapping for regional communities.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- SECTION 4: WHY CHOOSE US (Metrics) --- -->
+  <section class="why-choose-us-section py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 reveal-fade-up">
+          <span class="section-tagline" style="color: var(--color-accent);">Proven Impact</span>
+          <h2 class="text-display-2 mb-4">Why Organizations Partner With Us</h2>
+          <p class="lead text-light opacity-75">We provide certified engineers, custom utility strategy dashboards, and robust financial blueprints to minimize investment risk.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-4">
+            <!-- Metric 1 -->
+            <div class="col-sm-4 col-6 reveal-fade-up stagger-1">
+              <div class="metric-item">
+                <span class="metric-number" data-target="95" data-suffix="%">0%</span>
+                <span class="metric-label">Energy Optimization</span>
+              </div>
+            </div>
+            <!-- Metric 2 -->
+            <div class="col-sm-4 col-6 reveal-fade-up stagger-2">
+              <div class="metric-item">
+                <span class="metric-number" data-target="50" data-suffix="+">0</span>
+                <span class="metric-label">Energy Projects</span>
+              </div>
+            </div>
+            <!-- Metric 3 -->
+            <div class="col-sm-4 col-12 reveal-fade-up stagger-3">
+              <div class="metric-item">
+                <span class="metric-number" data-target="20" data-suffix="+">0</span>
+                <span class="metric-label">Sustainable Strategies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- SECTION 5: FINAL CTA BLOCK --- -->
+  <section class="section-cta py-5">
+    <div class="container">
+      <div class="cta-container-box reveal-fade-up">
+        <div class="cta-glow-element"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <h2 class="text-display-2 text-white mb-3">Ready to Build a Sustainable Energy Future?</h2>
+            <p class="lead text-white opacity-75 mb-0">Connect with our senior energy consultants today to map out your infrastructure audit and savings model.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="contact.html" class="btn-premium-primary px-5 py-3">
+              <span>Request Energy Audit</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- FOOTER --- -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="footer-logo-title d-flex align-items-center gap-2 mb-3" href="index.html">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L22 12L12 22L2 12L12 2Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M12 6V18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M8 12H16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <span>AETHERA</span>
+          </a>
+          <p class="small opacity-75">Premium energy advisory helping organizations execute high-yield, sustainable transitions to solar, wind, and hydro grids.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#" aria-label="LinkedIn"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-2 offset-lg-2">
+          <h6 class="footer-section-title">Navigation</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="home-2.html">Home 2</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-2">
+          <h6 class="footer-section-title">Inquiry Hub</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="pricing.html">Pricing Strategy</a></li>
+            <li><a href="contact.html">Energy Audit Request</a></li>
+            <li><a href="coming-soon.html">Launch Hub</a></li>
+            <li><a href="404.html">System Error Page</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12 col-lg-2">
+          <h6 class="footer-section-title">Security & Auth</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="login.html">Client Portal Login</a></li>
+            <li><a href="register.html">Register Account</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>&copy; 2026 Aethera Energy Consulting. All rights reserved.</div>
+        <div class="d-flex gap-3">
+          <a href="#" class="small">Sitemap</a>
+          <a href="#" class="small">Security Audits</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <!-- Custom Logic -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
