@@ -120,3 +120,33 @@ html[dir="rtl"] .accordion-button::after {
   margin-right: auto !important;
   margin-left: 0 !important;
 }
+
+/* --- FORM RTL OVERRIDES --- */
+html[dir="rtl"] .form-select {
+  background-position: left 0.75rem center;
+  padding-right: 0.75rem;
+  padding-left: 2.25rem;
+}
+
+html[dir="rtl"] .form-floating > label {
+  transform-origin: 100% 0;
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+
+html[dir="rtl"] .form-floating > .form-control:focus ~ label,
+html[dir="rtl"] .form-floating > .form-control:not(:placeholder-shown) ~ label,
+html[dir="rtl"] .form-floating > .form-select ~ label {
+  transform: scale(.85) translateY(-.5rem) translateX(0.15rem);
+}
+
+html[dir="rtl"] .form-control,
+html[dir="rtl"] .form-select {
+  text-align: right;
+}
+
+html[dir="rtl"] .password-toggle-btn {
+  right: auto;
+  left: 1rem;
+}

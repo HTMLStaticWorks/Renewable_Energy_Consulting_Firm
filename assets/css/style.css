@@ -38,7 +38,7 @@
 }
 
 /* Base Document Styles */
-body {
+html, body {
   font-family: var(--font-body);
   background-color: var(--color-bg-main);
   color: var(--color-text);
@@ -46,6 +46,10 @@ body {
   line-height: 1.65;
   letter-spacing: -0.01em;
   transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+.max-width-600 {
+  max-width: 600px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1273,7 +1277,7 @@ input:checked + .pricing-slider:before {
   .btn-hamburger {
     display: block;
   }
-  .navbar-nav-desktop {
+  .navbar-custom .navbar-nav-desktop {
     display: none !important;
   }
   .hero-img-main {
@@ -1291,16 +1295,25 @@ input:checked + .pricing-slider:before {
   }
   .timeline-step {
     text-align: left;
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 1.5rem;
     margin-bottom: 2rem;
   }
   .timeline-badge {
+    grid-column: 1;
+    grid-row: 1;
     margin: 0;
-    flex-shrink: 0;
+  }
+  .timeline-title {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 0.25rem;
+    align-self: center;
   }
   .timeline-text {
+    grid-column: 2;
+    grid-row: 2;
     padding: 0;
   }
   section {
@@ -1405,6 +1418,7 @@ html[data-theme="dark"] .success-quote-box {
   outline: none;
   border-radius: 3px;
   -webkit-appearance: none;
+  appearance: none;
   margin: 1.5rem 0;
 }
 
@@ -1540,4 +1554,39 @@ html[data-theme="dark"] .pricing-faq-accordion .accordion-button:not(.collapsed)
   border-top: 1px solid var(--color-border);
 }
 
+/* --- LINK HIGHLIGHT & HOVER EFFECTS --- */
+.link-hover-highlight {
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  display: inline-block;
+}
 
+.link-hover-highlight:hover {
+  color: var(--color-accent) !important;
+  text-shadow: 0 0 8px rgba(var(--color-primary-rgb), 0.5);
+}
+
+.link-hover-highlight::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--color-accent);
+  transform-origin: bottom right;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.link-hover-highlight:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* --- BREADCRUMB STYLING --- */
+.breadcrumb-item.active,
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--color-text-muted) !important;
+}

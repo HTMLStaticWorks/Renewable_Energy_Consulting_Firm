@@ -80,6 +80,10 @@ html[data-theme="dark"] .form-control::placeholder {
   color: var(--color-text-muted);
 }
 
+html[data-theme="dark"] .form-floating > .form-control:not(:focus)::placeholder {
+  color: transparent;
+}
+
 html[data-theme="dark"] .form-control:focus,
 html[data-theme="dark"] .form-select:focus {
   background-color: rgba(0, 0, 0, 0.3);
