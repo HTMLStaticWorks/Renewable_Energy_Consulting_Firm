@@ -259,6 +259,12 @@ a:hover {
   min-width: 240px;
 }
 
+/* Navbar Login button — compact, no forced min-width */
+.desktop-login-btn {
+  min-width: unset;
+  padding: 0.5rem 1.5rem;
+}
+
 /* Ensure hero section buttons stretch equally when wrapping */
 .hero-section .d-lg-flex > .btn-premium-primary,
 .hero-section .d-lg-flex > .btn-premium-secondary {
@@ -652,6 +658,16 @@ section {
 }
 
 /* --- FOOTER --- */
+/* Align footer columns neatly: brand left, link columns evenly spaced to the right */
+.footer-custom .row {
+  justify-content: space-between;
+}
+
+.footer-custom .col-lg-4,
+.footer-custom .col-lg-5 {
+  max-width: 340px;
+}
+
 .footer-custom {
   background-color: var(--color-bg-surface);
   color: var(--color-text-muted);

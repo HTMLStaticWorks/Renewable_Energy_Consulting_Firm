@@ -131,3 +131,10 @@ html[data-theme="dark"] .services-hero {
 html[data-theme="dark"] .accordion-button::after {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
+
+/* Contact page select dropdown dark mode fix */
+html[data-theme="dark"] .contact-select,
+html[data-theme="dark"] .contact-select option {
+  background-color: var(--color-bg-surface);
+  color: var(--color-text);
+}

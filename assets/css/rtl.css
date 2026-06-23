@@ -133,6 +133,17 @@ html[dir="rtl"] .form-select {
   padding-left: 2.25rem;
 }
 
+/* Contact select chevron RTL: move to left side */
+html[dir="rtl"] .select-chevron {
+  right: auto !important;
+  left: 1.25rem !important;
+}
+
+html[dir="rtl"] .contact-select {
+  padding-right: 1.25rem !important;
+  padding-left: 3rem !important;
+}
+
 html[dir="rtl"] .form-floating > label {
   transform-origin: 100% 0;
   left: auto;

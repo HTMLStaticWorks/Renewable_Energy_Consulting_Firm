@@ -178,14 +178,14 @@
                 <div class="col-12">
                   <label for="contactRequirement" class="form-label small fw-bold text-uppercase text-muted mb-2" style="letter-spacing: 0.5px;">Energy Requirement</label>
                   <div class="position-relative">
-                    <select class="form-select form-control" id="contactRequirement" style="padding: 1rem 1.25rem; padding-right: 3rem; border-radius: 0.5rem; border: 1px solid var(--color-border); background-color: var(--color-bg-body); background-image: none; cursor: pointer; appearance: none; font-weight: 500;">
+                    <select class="form-select form-control contact-select" id="contactRequirement" style="padding: 1rem 1.25rem; padding-right: 3rem; border-radius: 0.5rem; border: 1px solid var(--color-border); background-color: var(--color-bg-surface); background-image: none; cursor: pointer; appearance: none; font-weight: 500; color: var(--color-text);">
                       <option value="Solar">Solar Transition Feasibility</option>
                       <option value="Wind">Wind Farm Optimization</option>
                       <option value="Hydro">Hydropower Strategy</option>
                       <option value="General">Complete Energy Audit</option>
                       <option value="Partnership">Advisory Partnership</option>
                     </select>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="position-absolute opacity-50" style="right: 1.25rem; top: 50%; transform: translateY(-50%); pointer-events: none;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="position-absolute opacity-50 select-chevron" style="right: 1.25rem; top: 50%; transform: translateY(-50%); pointer-events: none;"><polyline points="6 9 12 15 18 9"></polyline></svg>
                   </div>
                 </div>
                 <div class="col-12">
@@ -258,7 +258,7 @@
   <footer class="footer-custom">
     <div class="container">
       <div class="row g-5">
-        <div class="col-lg-4">
+        <div class="col-lg-5">
           <a class="footer-logo-title d-flex align-items-center gap-2 mb-3" href="index.html">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L22 12L12 22L2 12L12 2Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
@@ -274,7 +274,7 @@
             <a href="#" aria-label="Instagram"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-lg-2 offset-lg-2">
+        <div class="col-md-4 col-sm-6 col-lg-auto ms-lg-auto">
           <h6 class="footer-section-title">Navigation</h6>
           <ul class="list-unstyled d-flex flex-column gap-2 small">
             <li><a href="index.html">Home 1</a></li>
@@ -284,7 +284,7 @@
             <li><a href="case-studies.html">Case Studies</a></li>
           </ul>
         </div>
-        <div class="col-md-4 col-sm-6 col-lg-2">
+        <div class="col-md-4 col-sm-6 col-lg-auto">
           <h6 class="footer-section-title">Inquiry Hub</h6>
           <ul class="list-unstyled d-flex flex-column gap-2 small">
             <li><a href="pricing.html">Pricing Strategy</a></li>
@@ -293,7 +293,7 @@
             <li><a href="404.html">System Error Page</a></li>
           </ul>
         </div>
-        <div class="col-md-4 col-sm-12 col-lg-2">
+        <div class="col-md-4 col-sm-12 col-lg-auto">
           <h6 class="footer-section-title">Security & Auth</h6>
           <ul class="list-unstyled d-flex flex-column gap-2 small">
             <li><a href="login.html">Client Portal Login</a></li>
@@ -327,3 +327,5 @@
   </button>
 </body>
 </html>
+
+
