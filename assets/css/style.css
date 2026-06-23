@@ -126,7 +126,7 @@ a:hover {
 }
 
 .navbar-brand-logo svg {
-  fill: var(--color-primary);
+  fill: var(--color-accent);
   transition: var(--transition-smooth);
 }
 
@@ -161,6 +161,8 @@ a:hover {
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  margin: 0;
+  border: none;
 }
 
 .nav-link-custom:hover::after,
@@ -212,6 +214,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  min-width: 240px;
 }
 
 .btn-premium-primary::before {
@@ -253,6 +256,13 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  min-width: 240px;
+}
+
+/* Ensure hero section buttons stretch equally when wrapping */
+.hero-section .d-lg-flex > .btn-premium-primary,
+.hero-section .d-lg-flex > .btn-premium-secondary {
+  flex: 1 1 auto;
 }
 
 .btn-premium-secondary::before {
@@ -726,6 +736,17 @@ section {
 .hamburger-line-2 { top: 14px; }
 .hamburger-line-3 { top: 22px; }
 
+/* Hamburger Active State (X) */
+.btn-hamburger.is-active .hamburger-line-1 {
+  transform: translateY(8px) rotate(45deg);
+}
+.btn-hamburger.is-active .hamburger-line-2 {
+  opacity: 0;
+}
+.btn-hamburger.is-active .hamburger-line-3 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 .offcanvas-custom {
   background-color: var(--color-bg-surface);
   border-left: 1px solid var(--color-border);
@@ -1101,6 +1122,7 @@ input:checked + .pricing-slider:before {
   border-color: var(--color-primary);
   box-shadow: 0 20px 45px rgba(5, 78, 59, 0.08);
   transform: scale(1.03);
+  overflow: visible;
 }
 
 .pricing-card.popular:hover {
@@ -1109,8 +1131,9 @@ input:checked + .pricing-slider:before {
 
 .popular-badge {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--color-primary);
   color: #ffffff;
   padding: 0.3rem 0.8rem;
@@ -1274,11 +1297,19 @@ input:checked + .pricing-slider:before {
 
 /* --- RESPONSIVE ADJUSTMENTS --- */
 @media (max-width: 1099.98px) {
+  .desktop-login-btn {
+    display: none !important;
+  }
   .btn-hamburger {
     display: block;
   }
   .navbar-custom .navbar-nav-desktop {
     display: none !important;
+  }
+  .offcanvas-custom .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    float: none;
   }
   .hero-img-main {
     height: 350px;
@@ -1590,3 +1621,61 @@ html[data-theme="dark"] .pricing-faq-accordion .accordion-button:not(.collapsed)
 .breadcrumb-item + .breadcrumb-item::before {
   color: var(--color-text-muted) !important;
 }
+
+/* --- SCROLL TO TOP BUTTON --- */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background-color: var(--color-bg-surface);
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1010;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px) scale(0.9);
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              visibility 0.3s, 
+              background-color 0.25s ease, 
+              color 0.25s ease, 
+              border-color 0.25s ease, 
+              box-shadow 0.25s ease;
+}
+
+.scroll-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.scroll-top-btn:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.25);
+  transform: translateY(-3px) scale(1.05);
+}
+
+.scroll-top-btn:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* Custom positioning for the strategic planning metrics card on services page (Desktop only) */
+@media (min-width: 1100px) {
+  .service-strategy-card {
+    bottom: 40px;
+    left: -10px;
+    max-width: 280px;
+  }
+}
+
+

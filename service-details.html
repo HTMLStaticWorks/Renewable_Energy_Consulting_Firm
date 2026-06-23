@@ -68,7 +68,8 @@
           </button>
         </div>
 
-
+        <!-- Login Button (Desktop) -->
+        <a href="login.html" class="btn-premium-primary desktop-login-btn py-2 px-4" style="font-size: 0.95rem; padding-top: 0.5rem; padding-bottom: 0.5rem;">Login</a>
 
         <!-- Hamburger Mobile button -->
         <button class="btn-hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavbar" aria-controls="mobileNavbar" aria-label="Toggle navigation">
@@ -91,7 +92,9 @@
         </svg>
         <span>AETHERA</span>
       </h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close" style="background: none; border: none; padding: 0.5rem; cursor: pointer; color: var(--color-text); transition: transform 0.2s ease;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
     </div>
     <div class="offcanvas-body p-4">
       <ul class="navbar-nav gap-2">
@@ -307,5 +310,11 @@
   
   <!-- Custom Logic -->
   <script src="assets/js/main.js"></script>
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to Top" title="Scroll to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
 </body>
 </html>

@@ -5,6 +5,11 @@ html[dir="rtl"] body {
   font-family: 'Tajawal', var(--font-body);
 }
 
+html[dir="rtl"] .list-unstyled {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
 html[dir="rtl"] h1, 
 html[dir="rtl"] h2, 
 html[dir="rtl"] h3, 
@@ -150,3 +155,51 @@ html[dir="rtl"] .password-toggle-btn {
   right: auto;
   left: 1rem;
 }
+
+html[dir="rtl"] .scroll-top-btn {
+  right: auto;
+  left: 2rem;
+}
+
+/* Custom positioning for the strategic planning metrics card on services page (Desktop only RTL) */
+@media (min-width: 1100px) {
+  html[dir="rtl"] .service-strategy-card {
+    left: auto;
+    right: -10px;
+  }
+}
+
+/* --- BOOTSTRAP ALIGNMENT RTL OVERRIDES --- */
+html[dir="rtl"] .text-start { text-align: right !important; }
+html[dir="rtl"] .text-end { text-align: left !important; }
+
+@media (min-width: 576px) {
+  html[dir="rtl"] .text-sm-start { text-align: right !important; }
+  html[dir="rtl"] .text-sm-end { text-align: left !important; }
+}
+@media (min-width: 768px) {
+  html[dir="rtl"] .text-md-start { text-align: right !important; }
+  html[dir="rtl"] .text-md-end { text-align: left !important; }
+}
+@media (min-width: 992px) {
+  html[dir="rtl"] .text-lg-start { text-align: right !important; }
+  html[dir="rtl"] .text-lg-end { text-align: left !important; }
+}
+@media (min-width: 1200px) {
+  html[dir="rtl"] .text-xl-start { text-align: right !important; }
+  html[dir="rtl"] .text-xl-end { text-align: left !important; }
+}
+
+/* Margin Start/End overrides for specific elements like hero paragraph */
+@media (min-width: 992px) {
+  html[dir="rtl"] .ms-lg-0 { 
+    margin-right: 0 !important; 
+    margin-left: auto !important; 
+  }
+  
+  html[dir="rtl"] .offset-lg-2 {
+    margin-right: 16.66666667% !important;
+    margin-left: 0 !important;
+  }
+}
+

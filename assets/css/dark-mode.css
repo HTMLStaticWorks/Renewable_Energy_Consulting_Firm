@@ -25,7 +25,7 @@ html[data-theme="dark"] .bg-white {
 }
 
 html[data-theme="dark"] .navbar-brand-logo svg {
-  fill: var(--color-primary);
+  fill: var(--color-accent);
 }
 
 html[data-theme="dark"] .navbar-custom {
@@ -127,3 +127,7 @@ html[data-theme="dark"] .services-hero {
   background-image: linear-gradient(rgba(7, 9, 8, 0.88), rgba(7, 9, 8, 0.88)), url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1920&q=80');
 }
 
+/* Accordion Arrow Contrast in Dark Mode */
+html[data-theme="dark"] .accordion-button::after {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}

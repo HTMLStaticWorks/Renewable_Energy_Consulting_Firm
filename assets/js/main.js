@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initForms();
   initCountdown();
   initEnergyCanvas();
+  initScrollTop();
+  initMobileMenu();
 });
 
 // === 2. THEME SYSTEM (Light / Dark) ===
@@ -515,4 +517,43 @@ function initEnergyCanvas() {
   };
   
   animate();
+}
+
+// === 14. SCROLL TO TOP BUTTON ===
+function initScrollTop() {
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  if (!scrollTopBtn) return;
+
+  const toggleScrollTopBtn = () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.classList.add('show');
+    } else {
+      scrollTopBtn.classList.remove('show');
+    }
+  };
+
+  window.addEventListener('scroll', toggleScrollTopBtn);
+  toggleScrollTopBtn(); // Initial check
+
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
+// === 15. MOBILE MENU TOGGLE LOGIC ===
+function initMobileMenu() {
+  const myOffcanvas = document.getElementById('mobileNavbar');
+  const btnHamburger = document.querySelector('.btn-hamburger');
+  
+  if (myOffcanvas && btnHamburger) {
+    myOffcanvas.addEventListener('show.bs.offcanvas', () => {
+      btnHamburger.classList.add('is-active');
+    });
+    myOffcanvas.addEventListener('hide.bs.offcanvas', () => {
+      btnHamburger.classList.remove('is-active');
+    });
+  }
 }
