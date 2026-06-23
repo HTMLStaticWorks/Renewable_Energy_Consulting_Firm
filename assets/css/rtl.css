@@ -214,3 +214,46 @@ html[dir="rtl"] .text-end { text-align: left !important; }
   }
 }
 
+/* =========================================================
+   FOOTER RTL OVERRIDES
+   In RTL flex row the main axis runs right→left, so the
+   first HTML child (AETHERA brand) appears on the far right
+   and the last child (Security & Auth) appears on the far
+   left — which is the correct reading order for RTL.
+   The fixes below handle text alignment, auto-margins, and
+   icon/bottom-bar direction inside the footer.
+   ========================================================= */
+
+/* 1. Right-align all footer section titles and link lists */
+html[dir="rtl"] .footer-section-title {
+  text-align: right;
+}
+
+html[dir="rtl"] .footer-custom ul.list-unstyled {
+  text-align: right;
+}
+
+/* 2. Right-align brand description paragraph */
+html[dir="rtl"] .footer-custom .small.opacity-75 {
+  text-align: right;
+}
+
+/* 3. Social icons row — align to the right (start in RTL) */
+html[dir="rtl"] .footer-custom .d-flex.gap-3 {
+  justify-content: flex-end;
+}
+
+/* 4. Brand logo link — push icon + text to the right */
+html[dir="rtl"] .footer-custom .footer-logo-title {
+  justify-content: flex-end;
+}
+
+/* 5. (ms-lg-auto removed from footer HTML — justify-content-between
+      on the row handles even column distribution in both LTR and RTL) */
+
+/* 6. Footer bottom bar — reverse copyright / links order */
+html[dir="rtl"] .footer-bottom {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
