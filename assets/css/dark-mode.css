@@ -53,7 +53,7 @@ html[data-theme="dark"] .footer-custom {
 }
 
 html[data-theme="dark"] .why-choose-us-section {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-bg-main);
 }
 
 html[data-theme="dark"] .cta-container-box {

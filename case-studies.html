@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light" dir="ltr">
 <head>
   <!-- Favicon -->
@@ -133,13 +133,15 @@
           <button class="filter-btn" data-filter="solar">Solar Systems</button>
           <button class="filter-btn" data-filter="wind">Wind Strategy</button>
           <button class="filter-btn" data-filter="hydro">Hydro Advisory</button>
+          <button class="filter-btn" data-filter="storage">Energy Storage</button>
+          <button class="filter-btn" data-filter="sustainability">Sustainability Consulting</button>
         </div>
       </div>
     </div>
   </section>
 
   <!-- --- CASE STUDIES GALLERY --- -->
-  <section class="section-gallery py-3">
+  <section class="section-gallery py-3 bg-dots">
     <div class="container">
       <div class="row g-4">
         <!-- Project 1 (Solar) -->
@@ -178,14 +180,14 @@
           </div>
         </div>
 
-        <!-- Project 4 (Solar) -->
-        <div class="col-md-6 col-lg-4 case-study-card-wrapper reveal-fade-up stagger-1" data-category="solar">
+        <!-- Project 4 (Energy Storage) -->
+        <div class="col-md-6 col-lg-4 case-study-card-wrapper reveal-fade-up stagger-1" data-category="storage">
           <div class="case-study-card">
-            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" alt="Modern clean energy utility array" class="case-study-img">
+            <img src="assets/img/battery_storage.jpg" alt="Industrial battery energy storage facility" class="case-study-img">
             <div class="case-study-overlay">
-              <span class="case-study-type">Solar Systems</span>
-              <h4 class="case-study-title">Retail Center Solar Microgrid</h4>
-              <div class="case-study-results">Offsets peak utility rates, generating 1.2 MW clean energy.</div>
+              <span class="case-study-type">Energy Storage</span>
+              <h4 class="case-study-title">Commercial BESS Integration</h4>
+              <div class="case-study-results">Installed 5 MWh battery energy storage system to eliminate peak-tariff rates.</div>
             </div>
           </div>
         </div>
@@ -202,14 +204,14 @@
           </div>
         </div>
 
-        <!-- Project 6 (Hydro) -->
-        <div class="col-md-6 col-lg-4 case-study-card-wrapper reveal-fade-up stagger-3" data-category="hydro">
+        <!-- Project 6 (Sustainability) -->
+        <div class="col-md-6 col-lg-4 case-study-card-wrapper reveal-fade-up stagger-3" data-category="sustainability">
           <div class="case-study-card">
-            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800&q=80" alt="Fast flowing mountain stream water resource" class="case-study-img">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Corporate sustainability transition plan" class="case-study-img">
             <div class="case-study-overlay">
-              <span class="case-study-type">Hydro Advisory</span>
-              <h4 class="case-study-title">Run-of-River Sizing Study</h4>
-              <div class="case-study-results">Ecosystem impact minimized while generating 800 kW local grids.</div>
+              <span class="case-study-type">Sustainability Consulting</span>
+              <h4 class="case-study-title">Enterprise ESG Transition Roadmap</h4>
+              <div class="case-study-results">Designed comprehensive Net-Zero strategy offsetting 45,000 tons of carbon.</div>
             </div>
           </div>
         </div>
@@ -233,30 +235,50 @@
             <div class="mb-3">
               <div class="d-flex justify-content-between small fw-bold mb-1">
                 <span>Solar Energy</span>
-                <span>48% (2.3 GW)</span>
+                <span>30% (1.44 GW)</span>
               </div>
               <div class="progress" style="height: 8px; background-color: var(--color-border);">
-                <div class="progress-bar" role="progressbar" style="width: 48%; background-color: var(--color-accent); border-radius: 4px;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: 30%; background-color: var(--color-accent); border-radius: 4px;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             
             <div class="mb-3">
               <div class="d-flex justify-content-between small fw-bold mb-1">
                 <span>Wind Energy</span>
-                <span>35% (1.68 GW)</span>
+                <span>25% (1.20 GW)</span>
               </div>
               <div class="progress" style="height: 8px; background-color: var(--color-border);">
-                <div class="progress-bar" role="progressbar" style="width: 35%; background-color: var(--color-primary); border-radius: 4px;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: 25%; background-color: var(--color-primary); border-radius: 4px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             
-            <div class="mb-4">
+            <div class="mb-3">
               <div class="d-flex justify-content-between small fw-bold mb-1">
                 <span>Hydro Energy</span>
-                <span>17% (0.82 GW)</span>
+                <span>15% (0.72 GW)</span>
               </div>
               <div class="progress" style="height: 8px; background-color: var(--color-border);">
-                <div class="progress-bar" role="progressbar" style="width: 17%; background-color: #3b82f6; border-radius: 4px;" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" style="width: 15%; background-color: #3b82f6; border-radius: 4px;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between small fw-bold mb-1">
+                <span>Energy Storage (BESS)</span>
+                <span>18% (0.86 GW)</span>
+              </div>
+              <div class="progress" style="height: 8px; background-color: var(--color-border);">
+                <div class="progress-bar" role="progressbar" style="width: 18%; background-color: #8b5cf6; border-radius: 4px;" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between small fw-bold mb-1">
+                <span>Sustainability Consulting</span>
+                <span>12% (0.58 GW)</span>
+              </div>
+              <div class="progress" style="height: 8px; background-color: var(--color-border);">
+                <div class="progress-bar" role="progressbar" style="width: 12%; background-color: #10b981; border-radius: 4px;" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
@@ -381,7 +403,7 @@
         <div class="col-lg-4 col-md-6 reveal-fade-up stagger-1">
           <div class="premium-card text-start align-items-start d-flex flex-column h-100 p-4">
             <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="card-icon-wrapper rounded-circle mb-0" style="width: 55px; height: 55px; background: rgba(16, 185, 129, 0.1); color: var(--color-primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: var(--font-heading);">
+              <div class="card-icon-wrapper rounded-circle mb-0 flex-shrink-0" style="width: 55px; height: 55px; background: rgba(16, 185, 129, 0.1); color: var(--color-primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: var(--font-heading);">
                 AH
               </div>
               <div>
@@ -410,7 +432,7 @@
         <div class="col-lg-4 col-md-6 reveal-fade-up stagger-2">
           <div class="premium-card text-start align-items-start d-flex flex-column h-100 p-4">
             <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="card-icon-wrapper rounded-circle mb-0" style="width: 55px; height: 55px; background: rgba(59, 130, 246, 0.1); color: #3b82f6; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: var(--font-heading);">
+              <div class="card-icon-wrapper rounded-circle mb-0 flex-shrink-0" style="width: 55px; height: 55px; background: rgba(59, 130, 246, 0.1); color: #3b82f6; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: var(--font-heading);">
                 NP
               </div>
               <div>
@@ -439,7 +461,7 @@
         <div class="col-lg-4 col-md-12 reveal-fade-up stagger-3">
           <div class="premium-card text-start align-items-start d-flex flex-column h-100 p-4">
             <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="card-icon-wrapper rounded-circle mb-0" style="width: 55px; height: 55px; background: rgba(245, 158, 11, 0.1); color: #f59e0b; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: var(--font-heading);">
+              <div class="card-icon-wrapper rounded-circle mb-0 flex-shrink-0" style="width: 55px; height: 55px; background: rgba(245, 158, 11, 0.1); color: #f59e0b; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: var(--font-heading);">
                 RV
               </div>
               <div>
@@ -480,7 +502,7 @@
             </svg>
             <span>AETHERA</span>
           </a>
-          <p class="small opacity-75">Premium energy advisory helping organizations execute high-yield, sustainable transitions to solar, wind, and hydro grids.</p>
+          <p class="small opacity-75">Premium energy advisory helping organizations execute high-yield, sustainable transitions across solar, wind, hydro, energy storage, and ESG consulting grids.</p>
           <div class="d-flex gap-3 mt-4">
             <a href="#" aria-label="LinkedIn"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
             <a href="#" aria-label="Twitter"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
