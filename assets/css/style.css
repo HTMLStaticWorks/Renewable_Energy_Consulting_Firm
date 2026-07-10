@@ -768,6 +768,35 @@ section {
   color: var(--color-accent);
 }
 
+.footer-custom .list-unstyled a {
+  display: inline-block;
+}
+
+.footer-custom .list-unstyled a:hover {
+  transform: translateX(4px);
+  color: var(--color-accent) !important;
+}
+
+/* Social links hover effect in footer */
+.footer-custom .d-flex.gap-3.mt-4 a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(var(--color-primary-rgb), 0.08);
+  color: var(--color-text-muted);
+  transition: var(--transition-fast);
+}
+
+.footer-custom .d-flex.gap-3.mt-4 a:hover {
+  background-color: var(--color-primary);
+  color: #ffffff !important;
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.25);
+}
+
 .footer-logo-title {
   color: var(--color-secondary) !important;
   font-family: var(--font-heading);
@@ -1773,9 +1802,188 @@ html[data-theme="dark"] .pricing-faq-accordion .accordion-button:not(.collapsed)
 @media (min-width: 1100px) {
   .service-strategy-card {
     bottom: 40px;
-    left: -10px;
+    left: 30px;
     max-width: 280px;
   }
 }
+
+/* --- VISUAL REFRESH ENHANCEMENTS --- */
+
+/* Partner / Client Logos */
+.trust-logo-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  opacity: 0.55;
+  transition: var(--transition-smooth);
+}
+.trust-logo-bar:hover {
+  opacity: 0.85;
+}
+.trust-logo-item {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Sectors We Serve / Industry Experience */
+.interactive-sector-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 2.25rem;
+  transition: var(--transition-smooth);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.interactive-sector-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition-smooth);
+}
+.interactive-sector-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px var(--color-shadow-hover);
+  border-color: rgba(var(--color-primary-rgb), 0.15);
+}
+.interactive-sector-card:hover::before {
+  transform: scaleX(1);
+}
+.sector-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: var(--transition-fast);
+}
+.interactive-sector-card:hover .sector-icon-box {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Team Grid Visual Refresh */
+.team-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  height: 100%;
+}
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px var(--color-shadow-hover);
+  border-color: rgba(var(--color-primary-rgb), 0.15);
+}
+.team-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 320px;
+}
+.team-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.team-card:hover .team-img-wrapper img {
+  transform: scale(1.05);
+}
+.team-socials-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(var(--color-secondary-rgb), 0.85) 0%, rgba(var(--color-secondary-rgb), 0) 100%);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  transform: translateY(100%);
+  transition: var(--transition-smooth);
+}
+.team-card:hover .team-socials-overlay {
+  transform: translateY(0);
+}
+.team-socials-overlay a {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  transition: var(--transition-fast);
+}
+.team-socials-overlay a:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+/* Pricing Page Design Refresh */
+.pricing-card {
+  position: relative;
+  transition: var(--transition-smooth);
+}
+.pricing-card.popular {
+  border: 2px solid var(--color-accent);
+}
+.pricing-popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.4rem 1.2rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+  z-index: 10;
+}
+
+/* Value Prop Upgrades (Why Choose Us) */
+.value-prop-card {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 2.25rem;
+  transition: var(--transition-smooth);
+}
+.value-prop-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(16, 185, 129, 0.3);
+  transform: translateY(-4px);
+}
+
 
 

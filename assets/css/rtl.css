@@ -176,7 +176,7 @@ html[dir="rtl"] .scroll-top-btn {
 @media (min-width: 1100px) {
   html[dir="rtl"] .service-strategy-card {
     left: auto;
-    right: -10px;
+    right: 30px;
   }
 }
 
@@ -255,5 +255,9 @@ html[dir="rtl"] .footer-custom .footer-logo-title {
 html[dir="rtl"] .footer-bottom {
   flex-direction: row-reverse;
   text-align: right;
+}
+
+html[dir="rtl"] .footer-custom .list-unstyled a:hover {
+  transform: translateX(-4px);
 }
 
